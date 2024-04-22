@@ -14,15 +14,15 @@ API endpoints:
 
 
 
-> use restdemo
-switched to db restdemo
-> show collections
+&gt;&nbsp; use restdemo<br/>
+switched to db restdemo<br/>
+&gt; show collections
 contacts
-> db.contacts.find()
+&gt; db.contacts.find()<br/><pre>
 { "_id" : ObjectId("625d3e6cf38461770eac0228"), "name" : "Student Demo", "email" : "nucbm@utcn.ro" }
 { "_id" : ObjectId("625d3eb4f38461770eac0229"), "name" : "Stud Cal", "email" : "cal@cunbm.ro" }
 { "_id" : ObjectId("625d3fc95c7c3de75b3f6d7e"), "create_date" : ISODate("2022-04-18T10:39:05.569Z"), "name" : "'Theo Ne'", "email" : "'no@thi.ng'", "__v" : 0 }
-> 
+</pre> 
 
 
 
