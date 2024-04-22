@@ -1,6 +1,8 @@
 let express = require('express');
-let mongoose = require('mongoose');
 let app = express();
+
+let mongoose = require('mongoose');
+mongoose.set('strictQuery', true);
 
 // Import routes
 let apiRoutes = require("./api-routes");
@@ -11,7 +13,7 @@ app.use(express.urlencoded({
 }))
 
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://localhost/restdemo', { useNewUrlParser: true});
+mongoose.connect('mongodb://127.0.0.1:27017/restdemo');
 
 var db = mongoose.connection;
 // Added check for DB connection
